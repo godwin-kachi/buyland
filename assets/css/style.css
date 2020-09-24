@@ -50,6 +50,9 @@
 label {
 	margin: 0;
 }
+video {
+	max-width: 100vw;
+}
 input {
 	background-color: transparent;
 	border: none !important;
