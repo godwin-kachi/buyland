@@ -11,9 +11,9 @@
   </head>
   <body id="landing" class="d-flex flex-column">
     <header class="">
-      <nav  class="navbar navbar-expand-lg navbar-light p-0 flex-column">
-        <div id="top-nav" class="w-100  fixed-top px-4 py-2  ml-auto flex-column d-none d-lg-flex">
-          <div class="d-flex w-100 justify-content-between " id="">
+      <nav  class="navbar navbar-expand-lg p-0">
+        <div id="top-nav" class="w-100 fixed-top px-4 py-2">
+          <div class="d-flex w-100 justify-content-between ">
             <a class="navbar-brand" href="./index.html" title="Go to Home Page">
               <span class="">Buy</span>
               <span class="green-txt">Land</span>
@@ -22,7 +22,7 @@
               <img class="menu-svg " src="./assets/imgs/svgs/menu.svg">
             </span>
              
-            <ul class="  d-flex " id="links-li">
+            <ul class="d-none d-lg-flex" id="links-li">
               <li class="nav-item px-xl-2 active">
                 <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
               </li>
@@ -44,7 +44,7 @@
                 </li>
               </div>
             </ul>
-            <ul class="d-flex">
+            <ul class="d-none d-lg-flex">
               <li class=" px-2 green-btn rounded-30 relative">
                 <a class="nav-link d-flex align-items-center" href="./login.html">
                   <span class="pr-2">Log in</span>
@@ -52,17 +52,9 @@
                 </a>
               </li>
             </ul>
-             
           </div>
         </div>
-        <div id="side-nav" class="d-flex d-lg-none w-100 sticky px-3 bg-white">
-          <a class="navbar-brand upper-case" href="./index.html" title="Go to Home Page">
-            <span class="">Buy</span>
-            <span class="green-txt">Land</span>
-          </a>
-          <span class="d-lg-none nav-toggler ml-auto" title="Toggle menu">
-            <img class="menu-svg " src="./assets/imgs/svgs/menu.svg">
-          </span>
+        <div id="side-nav" class=" d-flex d-lg-none w-100 px-3 bg-white">
           <aside class="side-menu-overlay ">
             <div class="side-menu bg-white d-flex flex-column px-3 ">
               <div class="d-flex justify-content-between align-items-center">
@@ -140,7 +132,7 @@
           <div class="text-div px-0 col-md-8 col-lg-7 col-xl-6 text-center text-md-left">
             <div class="title">
               <h1 class="def-black font-weight-bold">Buying <br> land assets.</h1>
-              <p class=" green-txt-2 font-weight-bold txt-shadow-1s">Simplified.</p>
+              <p class=" green-txt-2 font-weight-bold">Simplified.</p>
             </div>
             <img class="social-svg" src="./assets/imgs/svgs/triangle.svg" alt="">
             <!-- <hr class="my-4"> -->
