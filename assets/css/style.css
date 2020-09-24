@@ -64,7 +64,7 @@ ul, ol {
 	padding: 0;
 }
 .def-black {
-	color: #00214D;
+	color: #00214D !important;
 }
 .max-100vh {
 	max-height: 100vh;
@@ -127,7 +127,7 @@ ul, ol {
 	opacity: 1 !important;
 }
 .green-btn {
-	/* color: #fff !important; */
+	color: #00214D;
 	min-width: 110px;
 	text-align: center;
 	background-color: #00EBC7;
