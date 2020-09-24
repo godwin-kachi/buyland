@@ -2,15 +2,19 @@ $(document).ready(function() {
 /*==== These Functions are concerned with the navigation and menu ======*/
 	handle_nav();
 	function handle_nav () {
+		styleNav();
 		handleSideNav();
 		handleNavOnScroll();
+	}
+	function styleNav () {
+		if (window.pageYOffset <= 43) return $('#top-nav').removeClass('paper-box-shadow bg-white')
+		$('#top-nav').addClass('paper-box-shadow bg-white')
 	}
 	/* =====These functions handle the sticky top navbar  */
 	function handleNavOnScroll () {
 		let scrollTop = $(window).scrollTop();
 		$(window).scroll(function(e) {
-			if (window.pageYOffset <= 43) return $('#top-nav').removeClass('paper-box-shadow bg-white')
-			$('#top-nav').addClass('paper-box-shadow bg-white')
+			styleNav();
 		});
 	}
 

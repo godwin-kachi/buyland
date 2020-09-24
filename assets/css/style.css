@@ -4,8 +4,7 @@
 02. Default styles
 03. Menu or Navbar styles
 03. Sidebar/Sidemenu styles
-04. Carousel Slider styles
-05. Stores section styles
+04. Stores section styles
 06. Default Footer style
 07. Login Page styles
 08. Features Page style
@@ -24,20 +23,22 @@
     outline:none;
     margin: 0;
 		padding: 0;
-		color: #00214D;
     /*transition: 0.4s ease-in-out;
     -webkit-transition: all 300ms ease-in-out;
     -ms-transition: all 300ms ease-in-out;
     -o-transition: all 300ms ease-in-out;
     -moz-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;*/
-}
-body {
+	}
+	body {
+		color: #00214D;
     overflow-wrap: break-word;
 		min-height: 100vh;
 		/* background-color: #F7F7F9; */
 }
-
+.bg-grey {
+		background-color: #F7F7F9;
+}
 /* older styles */
  
 .user-svg {
@@ -125,6 +126,7 @@ ul, ol {
 	color: #00214D !important;
 	opacity: 1 !important;
 }
+
 .green-btn {
 	color: #00214D;
 	min-width: 110px;
@@ -143,7 +145,9 @@ ul, ol {
 .green-btn *{
 	opacity: 1 !important;
 }
-
+.section-title {
+	font-size: 1.5rem;
+}
 .green-btn:hover,.trans-btn:hover {
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;
 	/* box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15); */
@@ -165,6 +169,9 @@ ul, ol {
     color: #0069D9 !important;
     overflow-wrap: break-word;
 }
+a.navbar-brand :first-child {
+	color: #00214D !important;
+}
 .break-word {
     overflow-wrap: break-word;
 }
@@ -176,6 +183,9 @@ ul, ol {
     transition: none !important;
 }
 .montserrat {
+	font-family: Montserrat !important;
+}
+.montserrat * {
 	font-family: Montserrat !important;
 }
 .green-bg-2 {
@@ -245,6 +255,7 @@ li.nav-item :hover {
 .side-menu a.navbar-brand {
 	font-size: 150% !important;
 }
+ 
 .side-menu a.nav-link {
 	font-size: 0.9rem !important;
 }
@@ -312,18 +323,17 @@ body > footer .footer-li {
 	cursor: pointer;
 }
 /*============================================= LANDING PAGE =================================================== */
-section.landing-top .text-div {
+section#landing-top .text-div {
 	position: relative;
-	z-index: 3;
 	margin-top: 180px;
 	line-height: 2rem;
 
 }
-section.landing-top .img-div {
+section#landing-top .img-div {
 	 position: absolute;
 
 }
-section.landing-top .img-div img  {
+section#landing-top .img-div img  {
 	max-height: 95vh;
 	width: 100%;
 	z-index: 2;
@@ -348,7 +358,7 @@ body#landing .text-div .title *  {
 	body#landing .text-div .title {
 		font-size:4.5rem;
 	}
-	section.landing-top .text-div {
+	section#landing-top .text-div {
 		margin-top: 220px;
 	}
 }
@@ -356,6 +366,15 @@ body#landing .text-div .title *  {
 	body#landing .text-div .title p  {
 		text-shadow: none;
 	}
+}
+section#how-it-works {
+	background: url('../imgs/process-bg.jpg') no-repeat fixed;
+	background-size: cover;
+
+}
+section#how-it-works ul img {
+	width: 40px;
+	cursor: auto;
 }
 /*============================================= LOGIN PAGE =================================================== */
 body#login {
