@@ -381,6 +381,9 @@ section#how-it-works ul img {
 	width: 40px;
 	cursor: auto;
 }
+section#video-explainer video {
+	min-height: 55vh;
+}
 /*============================================= LOGIN PAGE =================================================== */
 body#login {
 	background: url('../imgs/construction-site-sm.jpg') no-repeat fixed;
