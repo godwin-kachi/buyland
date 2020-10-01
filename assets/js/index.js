@@ -7,8 +7,8 @@ $(document).ready(function() {
 		handleNavOnScroll();
 	}
 	function styleNav () {
-		if (window.pageYOffset <= 43) return $('#top-nav').removeClass('paper-box-shadow bg-white')
-		$('#top-nav').addClass('paper-box-shadow bg-white')
+		if (window.pageYOffset <= 43) return $('nav').removeClass('paper-box-shadow bg-white')
+		$('nav').addClass('paper-box-shadow bg-white')
 	}
 	/* =====These functions handle the sticky top navbar  */
 	function handleNavOnScroll () {

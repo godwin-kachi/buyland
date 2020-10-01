@@ -55,12 +55,14 @@ video {
 	max-width: 100vw;
 }
 input {
-	background-color: transparent;
-	border: none !important;
-	border-bottom: 1px solid #ced4da !important;
-	border-radius: 0 !important;
-	outline: none;
-	transition: border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
+	/* background-color: transparent; */
+	/* border: none !important; */
+	/* border-bottom: 1px solid #ced4da !important; */
+	/* border-radius: 0 !important; */
+	/* padding: 1.1rem 0.75rem !important; */
+	/* margin: 4px 0; */
+	/* outline: none; */
+	/* transition: border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out; */
 }
  
 
@@ -402,16 +404,9 @@ form.login * {
 }
 
 /*============================================= FEATURES PAGE =================================================== */
-section#features .paper-box-shadow {
-	box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15) !important;
-}
-
+ 
 body#login section#login {
 	min-height: 92vh;
-}
-.feature-svg {
-	height: 50px;
-	width: 50px;
 }
 
 /*============================================= 404 PAGE =================================================== */
@@ -428,17 +423,21 @@ body#error-404-page h2{
 	}
 }
 
-/*============================================= TERMS AND CONDITIONS PAGE =================================================== */
+/*============================================= Market PAGE =================================================== */
  
-body#terms-conditions-page h1 {
-	font-size: 2rem;
-}
-body#terms-conditions-page h3 {
-	font-size: 1.3rem;
+body#market-home form.search-bar input{
+	padding: 1.1rem 0.75rem !important;
+
 }
 @media screen and (min-width:768px) {
-	body#terms-conditions-page h1 {
-		font-size: 2.5rem;
+	body#market-home nav a.navbar-brand{
+		font-size: 140% !important;
+		
+	}
+	body#market-home nav *{
+		font-size: 100% !important;
+		
 	}
 }
- 
+
+
