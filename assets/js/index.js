@@ -1,3 +1,4 @@
+/// <reference path="../typings/tsd.d.ts" />
 $(document).ready(function() {
 /*==== These Functions are concerned with the navigation and menu ======*/
 	handle_nav();
@@ -47,13 +48,14 @@ $(document).ready(function() {
 		});
 	}
 
+
 /*==== This is the end of navigation and menu functions ======*/
  
 	/*===== This will handle popper like drop downs like in the privacy policy page ======*/
 		
     $(".dropper").click(function(){
-        $(this).find('.drop').toggleClass('d-none')
-        $(this).find('.link').toggleClass('d-none')
-    });
+        $(".dropper +").slideToggle()
+		});
+		$('.drop').css('display', 'none')
      
 })
