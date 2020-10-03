@@ -427,7 +427,11 @@ body#error-404-page h2{
 }
 
 /*============================================= Market PAGE =================================================== */
- 
+body#market-home{
+	background-color: blanchedalmond;
+}
+
+
 body#market-home form.search-bar input{
 	padding: 1.1rem 0.75rem !important;
 
@@ -443,11 +447,17 @@ body#market-home nav form > div .border-left{
 	border-left: 1px solid #919597 !important;
 }
 body#market-home main {
-	margin-top: 100px;
+	margin-top: 159px;
 }
 body#market-home #marketCarousel img{
 	width: 100%;
 	height: 385px;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+body#market-home .img-slide img{
+	width: 100%;
+	height: 300px;
 	-o-object-fit: cover;
 	object-fit: cover;
 }
@@ -460,7 +470,7 @@ body#market-home #marketCarousel img{
 		font-size: 100% !important;
 	}
 	body#market-home main {
-		margin-top: 15px;
+		margin-top: 73px;
 	}
 }
 
