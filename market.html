@@ -437,7 +437,7 @@
    <script>
      let swiper = new Swiper('.swiper-container', {
        cssMode: true,
-       slidesPerView: 3,
+       slidesPerView: 1,
        spaceBetween: 10,
        navigation: {
          nextEl: '.swiper-button-next',
@@ -446,8 +446,30 @@
        preloadImages: false,
       // Enable lazy loading
       lazy: true,
-       mousewheel: true,
-       keyboard: true,
+      mousewheel: true,
+      keyboard: true,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        1600: {
+          slidesPerView: 5,
+          spaceBetween: 20,
+        },
+        1900: {
+          slidesPerView: 6,
+          spaceBetween: 20,
+        },
+      }
      });
    </script>
   <script src="./assets/js/index.js"></script>
