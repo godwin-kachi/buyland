@@ -461,6 +461,20 @@ body#market-home .img-slide img{
 	-o-object-fit: cover;
 	object-fit: cover;
 }
+body#market-home .swiper-slide:hover {
+	box-shadow: 0px 0px 5px 2px #F0F0F0;
+
+}
+ /* Hide scrollbar for Chrome, Safari and Opera */
+ .hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+} 
 @media screen and (min-width:768px) {
 	body#market-home nav a.navbar-brand{
 		font-size: 140% !important;

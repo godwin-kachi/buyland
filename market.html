@@ -7,6 +7,10 @@
 
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  
+  <link rel="stylesheet" href="swiper.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/extra-responsive.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
@@ -28,7 +32,7 @@
                 <input id="search" type="text" class="form-control border-0 " 
                 placeholder="Search for anything">
                 <button class="bg-trans my-auto border-left" title="search">
-                  <img class="med-svg mx-2" src="./assets/imgs/svgs/search.svg">
+                  <img class="med-svg mx-2" alt="" src="./assets/imgs/svgs/search.svg">
                 </button>
               </div>
             </form>
@@ -162,27 +166,27 @@
               Categories
               <img src="./assets/imgs/svgs/down-arrow.svg" class=" social-svg" alt="">
             </button>
-            <ul class="d-md-flex drop list-group pointer-all" style="font-size: 92%;">
+            <ul class="d-md-flex drop list-group pointer-all " style="font-size: 92%;">
               <li class="list-group-item p-0 list-group-item-action">
-                <a class=" d-block py-2 py-md-3 px-3 " href="#">Category A</a>
+                <a class=" d-block py-2 py-md-3 px-3 def-black " href="#">Category A</a>
               </li>
               <li class="list-group-item p-0 list-group-item-action">
-                <a class=" d-block py-2 py-md-3 px-3 " href="#">Category B</a>
+                <a class=" d-block py-2 py-md-3 px-3 def-black " href="#">Category B</a>
               </li>
               <li class="list-group-item p-0 list-group-item-action">
-                <a class=" d-block py-2 py-md-3 px-3 " href="#">Category C</a>
+                <a class=" d-block py-2 py-md-3 px-3 def-black " href="#">Category C</a>
               </li>
               <li class="list-group-item p-0 list-group-item-action">
-                <a class=" d-block py-2 py-md-3 px-3 " href="#">Category D</a>
+                <a class=" d-block py-2 py-md-3 px-3 def-black " href="#">Category D</a>
               </li>
               <li class="list-group-item p-0 list-group-item-action">
-                <a class=" d-block py-2 py-md-3 px-3 " href="#">Category E</a>
+                <a class=" d-block py-2 py-md-3 px-3 def-black " href="#">Category E</a>
               </li>
               <li class="list-group-item p-0 list-group-item-action">
-                <a class=" d-block py-2 py-md-3 px-3 " href="#">Category F</a>
+                <a class=" d-block py-2 py-md-3 px-3 def-black " href="#">Category F</a>
               </li>
               <li class="list-group-item p-0 list-group-item-action">
-                <a class=" d-block py-2 py-md-3 px-3 " href="#">More Categories</a>
+                <a class=" d-block py-2 py-md-3 px-3 def-black " href="#">More Categories</a>
               </li>
             </ul>
           </div>
@@ -196,19 +200,19 @@
                 </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-interval="8000">
-                    <img class="d-block card-img w-100" src="./assets/imgs/carousel-1.jpg" alt="First slide">
+                    <img class="d-block card-img w-100" loading="lazy" src="./assets/imgs/carousel-1.jpg" alt="First slide">
                     <div class="carousel-caption d-none d-md-block">
                       <p class=" font-weight-bold">Endless Opportunities</p>
                     </div>
                     </div>
                   <div class="carousel-item" data-interval="8000">
-                    <img class="d-block card-img w-100" src="./assets/imgs/carousel-12.jpg" alt="Second slide">
+                    <img class="d-block card-img w-100" loading="lazy" src="./assets/imgs/carousel-12.jpg" alt="Second slide">
                     <div class="carousel-caption d-none d-md-block">
                       <p class=" font-weight-bold">Share with friends</p>
                     </div>
                     </div>
                   <div class="carousel-item" data-interval="8000">
-                    <img class="d-block card-img w-100" src="./assets/imgs/carousel-11.jpg" alt="Third slide">
+                    <img class="d-block card-img w-100" loading="lazy" src="./assets/imgs/carousel-11.jpg" alt="Third slide">
                     <div class="carousel-caption d-none d-md-block">
                       <p class=" font-weight-bold">Get your own land assets</p>
                     </div>
@@ -230,71 +234,194 @@
     </section>
     <section class="py-2 img-slide">
       <div class="container">
-        <div class="row">
-          <div class="col ">
-            <div class="bg-white fullHeight rounded p-3">
-              <div class="d-flex">
-                <h3 class=" section-title">Popular places</h3>
-                <button class="btn btn-outline-primary ml-auto">See All</button>
+        <div class="bg-white rounded p-3">
+          <div class="d-flex">
+            <h3 class=" section-title">Popular places</h3>
+            <button class="btn btn-outline-primary ml-auto">See All</button>
+          </div>
+          <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper py-4">
+              <div class="flex-column py-3 pointer swiper-slide rounded " title="View more details">
+                <a href="#" class="def-black">
+                  <img data-src="./assets/imgs/mobile-life.png" class="img-fluid rounded swiper-lazy" alt="" >
+                  <!-- Preloader image -->
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                  <div class="product-short-desc">
+                    <ul class="py-2 mt-3">
+                      <li> <span class="font-weight-bold">Location:</span> Lekki, Lagos</li>
+                      <li> <span class="font-weight-bold">Price per plotlet :</span> 20,000</li>
+                    </ul>
+                  </div>
+                </a>
               </div>
-              
-              <div class="row">
-                <div class=" py-3 pointer col-12 col-md-4 " title="View more details">
-                  <img src="./assets/imgs/book_island.jpg" class="img-fluid border rounded paper-box-shadow" alt="">
+              <div class="flex-column py-3 pointer swiper-slide rounded " title="View more details">
+                <a href="#" class="def-black">
+                  <img data-src="./assets/imgs/mobile-life.png" class="img-fluid rounded swiper-lazy" alt="" >
+                  <!-- Preloader image -->
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                   <div class="product-short-desc">
-                    <ul class="py-2">
+                    <ul class="py-2 mt-3">
                       <li> <span class="font-weight-bold">Location:</span> Lekki, Lagos</li>
                       <li> <span class="font-weight-bold">Price per plotlet :</span> 20,000</li>
                     </ul>
                   </div>
-                </div>
-                <div class=" py-3 pointer col-12 col-md-4 " title="View more details">
-                  <img src="./assets/imgs/clara_california_shot.jpg" class="img-fluid border rounded paper-box-shadow" alt="">
+                </a>
+              </div>
+              <div class="flex-column py-3 pointer swiper-slide rounded " title="View more details">
+                <a href="#" class="def-black">
+                  <img data-src="./assets/imgs/mobile-life.png" class="img-fluid rounded swiper-lazy" alt="" >
+                  <!-- Preloader image -->
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                   <div class="product-short-desc">
-                    <ul class="py-2">
+                    <ul class="py-2 mt-3">
                       <li> <span class="font-weight-bold">Location:</span> Lekki, Lagos</li>
                       <li> <span class="font-weight-bold">Price per plotlet :</span> 20,000</li>
                     </ul>
                   </div>
-                </div>
-                <div class=" py-3 pointer col-12 col-md-4 " title="View more details">
-                  <img src="./assets/imgs/carousel-11.jpg" class="img-fluid border rounded paper-box-shadow" alt="">
+                </a>
+              </div>
+              <div class="flex-column py-3 pointer swiper-slide rounded " title="View more details">
+                <a href="#" class="def-black">
+                  <img data-src="./assets/imgs/mobile-life.png" class="img-fluid rounded swiper-lazy" alt="" >
+                  <!-- Preloader image -->
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                   <div class="product-short-desc">
-                    <ul class="py-2">
+                    <ul class="py-2 mt-3">
                       <li> <span class="font-weight-bold">Location:</span> Lekki, Lagos</li>
                       <li> <span class="font-weight-bold">Price per plotlet :</span> 20,000</li>
                     </ul>
                   </div>
-                </div>
-                <div class=" py-3 pointer col-12 col-md-4 " title="View more details">
-                  <img src="./assets/imgs/carousel-15.jpg" class="img-fluid border rounded paper-box-shadow" alt="">
+                </a>
+              </div>
+              <div class="flex-column py-3 pointer swiper-slide rounded " title="View more details">
+                <a href="#" class="def-black">
+                  <img data-src="./assets/imgs/mobile-life.png" class="img-fluid rounded swiper-lazy" alt="" >
+                  <!-- Preloader image -->
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                   <div class="product-short-desc">
-                    <ul class="py-2">
+                    <ul class="py-2 mt-3">
                       <li> <span class="font-weight-bold">Location:</span> Lekki, Lagos</li>
                       <li> <span class="font-weight-bold">Price per plotlet :</span> 20,000</li>
                     </ul>
                   </div>
-                </div>
-                <div class=" py-3 pointer col-12 col-md-4 " title="View more details">
-                  <img src="./assets/imgs/carousel-16.jpg" class="img-fluid border rounded paper-box-shadow" alt="">
+                </a>
+              </div>
+              <div class="flex-column py-3 pointer swiper-slide rounded " title="View more details">
+                <a href="#" class="def-black">
+                  <img data-src="./assets/imgs/mobile-life.png" class="img-fluid rounded swiper-lazy" alt="" >
+                  <!-- Preloader image -->
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                   <div class="product-short-desc">
-                    <ul class="py-2">
+                    <ul class="py-2 mt-3">
                       <li> <span class="font-weight-bold">Location:</span> Lekki, Lagos</li>
                       <li> <span class="font-weight-bold">Price per plotlet :</span> 20,000</li>
                     </ul>
                   </div>
-                </div>
-                <div class=" py-3 pointer col-12 col-md-4 " title="View more details">
-                  <img src="./assets/imgs/mobile-life.png" class="img-fluid border rounded paper-box-shadow" alt="">
-                  <div class="product-short-desc">
-                    <ul class="py-2">
-                      <li> <span class="font-weight-bold">Location:</span> Lekki, Lagos</li>
-                      <li> <span class="font-weight-bold">Price per plotlet :</span> 20,000</li>
-                    </ul>
-                  </div>
-                </div>
+                </a>
               </div>
             </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-2 img-slide">
+      <div class="container">
+        <div class="bg-white rounded p-3">
+          <div class="d-flex">
+            <h3 class=" section-title">What's around you</h3>
+            <button class="btn btn-outline-primary ml-auto">See All</button>
+          </div>
+          <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper py-4">
+              <div class="flex-column py-3 pointer swiper-slide rounded " title="View more details">
+                <a href="#" class="def-black">
+                  <img data-src="./assets/imgs/mobile-life.png" class="img-fluid rounded swiper-lazy" alt="" >
+                  <!-- Preloader image -->
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                  <div class="product-short-desc">
+                    <ul class="py-2 mt-3">
+                      <li> <span class="font-weight-bold">Location:</span> Lekki, Lagos</li>
+                      <li> <span class="font-weight-bold">Price per plotlet :</span> 20,000</li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <div class="flex-column py-3 pointer swiper-slide rounded " title="View more details">
+                <a href="#" class="def-black">
+                  <img data-src="./assets/imgs/mobile-life.png" class="img-fluid rounded swiper-lazy" alt="" >
+                  <!-- Preloader image -->
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                  <div class="product-short-desc">
+                    <ul class="py-2 mt-3">
+                      <li> <span class="font-weight-bold">Location:</span> Lekki, Lagos</li>
+                      <li> <span class="font-weight-bold">Price per plotlet :</span> 20,000</li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <div class="flex-column py-3 pointer swiper-slide rounded " title="View more details">
+                <a href="#" class="def-black">
+                  <img data-src="./assets/imgs/mobile-life.png" class="img-fluid rounded swiper-lazy" alt="" >
+                  <!-- Preloader image -->
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                  <div class="product-short-desc">
+                    <ul class="py-2 mt-3">
+                      <li> <span class="font-weight-bold">Location:</span> Lekki, Lagos</li>
+                      <li> <span class="font-weight-bold">Price per plotlet :</span> 20,000</li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <div class="flex-column py-3 pointer swiper-slide rounded " title="View more details">
+                <a href="#" class="def-black">
+                  <img data-src="./assets/imgs/mobile-life.png" class="img-fluid rounded swiper-lazy" alt="" >
+                  <!-- Preloader image -->
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                  <div class="product-short-desc">
+                    <ul class="py-2 mt-3">
+                      <li> <span class="font-weight-bold">Location:</span> Lekki, Lagos</li>
+                      <li> <span class="font-weight-bold">Price per plotlet :</span> 20,000</li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <div class="flex-column py-3 pointer swiper-slide rounded " title="View more details">
+                <a href="#" class="def-black">
+                  <img data-src="./assets/imgs/mobile-life.png" class="img-fluid rounded swiper-lazy" alt="" >
+                  <!-- Preloader image -->
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                  <div class="product-short-desc">
+                    <ul class="py-2 mt-3">
+                      <li> <span class="font-weight-bold">Location:</span> Lekki, Lagos</li>
+                      <li> <span class="font-weight-bold">Price per plotlet :</span> 20,000</li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+              <div class="flex-column py-3 pointer swiper-slide rounded " title="View more details">
+                <a href="#" class="def-black">
+                  <img data-src="./assets/imgs/mobile-life.png" class="img-fluid rounded swiper-lazy" alt="" >
+                  <!-- Preloader image -->
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                  <div class="product-short-desc">
+                    <ul class="py-2 mt-3">
+                      <li> <span class="font-weight-bold">Location:</span> Lekki, Lagos</li>
+                      <li> <span class="font-weight-bold">Price per plotlet :</span> 20,000</li>
+                    </ul>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
         </div>
       </div>
@@ -302,7 +429,27 @@
   </main>
   <script src="./assets/js/jquery-3.5.1.min.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
-
+  
+   <!-- Swiper JS -->
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <!-- Initialize Swiper -->
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script>
+     let swiper = new Swiper('.swiper-container', {
+       cssMode: true,
+       slidesPerView: 3,
+       spaceBetween: 10,
+       navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+       },
+       preloadImages: false,
+      // Enable lazy loading
+      lazy: true,
+       mousewheel: true,
+       keyboard: true,
+     });
+   </script>
   <script src="./assets/js/index.js"></script>
 </body>
 </html>
