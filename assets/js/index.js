@@ -53,9 +53,6 @@ $(document).ready(function() {
  
 	/*===== This will handle popper like drop downs like in the privacy policy page ======*/
 		
-    $(".dropper").click(function(){
-        $(".dropper +").slideToggle()
-		});
-		$('.drop').css('display', 'none')
-		 
+		dropToggler();
+		autoFixInAltProps();
 })
