@@ -48,7 +48,9 @@ $(document).ready(function() {
 		});
 	}
 
-
+	function make_plotlets(takenCount, freeCount) {
+		$('.plot-diagram')
+	}
 /*==== This is the end of navigation and menu functions ======*/
  
 	/*===== This will handle popper like drop downs like in the privacy policy page ======*/

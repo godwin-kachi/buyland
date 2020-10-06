@@ -428,7 +428,7 @@ body#error-404-page h2{
 
 /*============================================= Market PAGE =================================================== */
 body#market-home{
-	background-color: #f5f5f5;
+	background-color: #eee;
 }
 
 
@@ -495,6 +495,16 @@ body#market-home .swiper-slide {
 
 /*============================================= PRODUCT OVERVIEW =================================================== */
 
-body#product-overview {
-	background-color: #f5f5ff;
+body#market-home .plot-diagram {
+	border:1px solid #dee2e6!important;
+	min-width: 200px;
+	min-height: 50px;
+}
+
+.input-counter {
+	border-bottom: 1px solid #00214D;
+	padding-left: auto;
+	padding-right: auto;
+	text-align: center;
+	max-width: 40px;
 }
