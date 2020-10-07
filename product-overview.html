@@ -186,7 +186,9 @@
                   <p>&#8358;25,000 / plotlet</p>
                   <form>
                     <div class="form-group">
-                      <input type="tel" class="input-counter">
+                      <img src="./assets/imgs/svgs/plus.svg" alt="" class="" onclick="document.querySelector('.input-counter').value++">
+                      <input type="tel" class="input-counter mx-3" placeholder="0" >
+                      <img src="./assets/imgs/svgs/minus.svg" alt="" class="" onclick="document.querySelector('.input-counter').value--">
                     </div>
                     <div class="">
                       <button class="btn btn-block z-depth-1 btn-orange">Add Plotlets to Cart</button>
@@ -194,8 +196,8 @@
                     <div class="mt-5">
                       <p>Other Options</p>
                       <hr>
-                      <div class="d-flex">
-                        <button class="btn col-lg-4 mr-3 btn-block z-depth-1 btn-secondary">Add Plot to Cart</button>
+                      <div class="row px-3">
+                        <button class="btn col-lg-4 mr-lg-3 btn-block z-depth-1 btn-secondary">Add Plot to Cart</button>
                         <button class="btn mt-lg-0 col-lg-4 btn-block z-depth-1 btn-danger">Buy up this land</button>
                       </div>
                     </div>
@@ -229,7 +231,8 @@
    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
 
    <!-- Initialize Swiper -->
-    
+
+  
   <script src="./assets/js/daniel.js"></script>
   <script src="./assets/js/index.js"></script>
 </body>
