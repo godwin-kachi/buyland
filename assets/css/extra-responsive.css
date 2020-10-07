@@ -206,7 +206,7 @@
 	border-bottom-right-radius: 0px !important;
 }
 .btn-orange {
-	color: #fff;
+	color: #fff !important;
 	background-color: #F7772F;
 	border-color: #F7772F;
 }
@@ -215,7 +215,7 @@
 	color: #fff;
 	background-color: #FF9800;
 }
-.btn-orange:hover {
+.btn-orange:hover:not(:disabled) {
 	color: #fff;
 	background-color: #F0950E;
 	border-color: #FF9800;

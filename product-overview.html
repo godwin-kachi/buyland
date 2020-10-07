@@ -169,16 +169,40 @@
     </section>
     <section id="call-to-action">
         <div class="container">
-          <div class="bg-white py-4 z-depth-1 rounded px-3">
+          <div class="bg-white py-5 z-depth-1 rounded px-3">
             <div class="row">
               <div class="col-lg-5">
                 <img src="./assets/imgs/mobile-life.png" class="img-fluid" alt="">
               </div>
               <div class="col text-center text-lg-left">
-                <div class="col-9 col-sm-8 col-md-6 col-lg-4 mx-auto mx-lg-3 py-5 px-0">
-                  <div class="rounded plot-diagram p-3">
-                  </div>
-                </div>
+                <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Plotlets</th>
+                      <th scope="col">Plots</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Total</th>
+                      <td><button class="badge badge-secondary">4000</button></td>
+                      <td><button class="badge badge-secondary">100</button></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Sold</th>
+                      <td><button class="badge badge-danger">3345</button></td>
+                      <td><button class="badge badge-danger">35</button></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Available</th>
+                      <td><button class="badge badge-success">555</button></td>
+                      <td><button class="badge badge-success">5</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <hr>
+
                 <div class="col mx-auto ">
                   <h4>Plots in Egbada Housing Estate </h4>
                   <hr>
@@ -190,16 +214,11 @@
                       <input type="tel" class="input-counter mx-3" placeholder="0" >
                       <img src="./assets/imgs/svgs/minus.svg" alt="" class="" onclick="document.querySelector('.input-counter').value--">
                     </div>
-                    <div class="">
-                      <button class="btn btn-block z-depth-1 btn-orange">Add Plotlets to Cart</button>
+                    <div class="btn btn-light btn-block">
+                      <b>Summary</b>: <span>0 Plotlets</span>
                     </div>
-                    <div class="mt-5">
-                      <p>Other Options</p>
-                      <hr>
-                      <div class="row px-3">
-                        <button class="btn col-lg-4 mr-lg-3 btn-block z-depth-1 btn-secondary">Add Plot to Cart</button>
-                        <button class="btn mt-lg-0 col-lg-4 btn-block z-depth-1 btn-danger">Buy up this land</button>
-                      </div>
+                    <div class="mt-4">
+                      <button disabled class="btn btn-block z-depth-1 btn-orange">Proceed</button>
                     </div>
                   </form>
                 </div>
