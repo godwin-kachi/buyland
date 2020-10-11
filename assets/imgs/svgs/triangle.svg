@@ -1,3 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="flex-shrink-0 fill-current text-navy mt-24 mb-32" data-shape="small-triangle" width="20" height="20" style="transform: scaleX(1); transform-origin: 20px 10px 0px;">
-  <path d="M0 19.98L19.98 0 20 20z" data-shape="triangle-bottom-right" class="fill-current" fill-rule="evenodd"></path>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="flex-shrink-0 fill-current text-navy mt-24 mb-32" data-shape="small-triangle" viewBox="0 0 20 20" style="transform:scaleX(1);transform-origin:20px 10px 0"><path fill-rule="evenodd" d="M0 19.98L19.98 0 20 20z" class="fill-current" data-shape="triangle-bottom-right"/></svg>
