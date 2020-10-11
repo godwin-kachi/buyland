@@ -173,8 +173,8 @@
       </div>
     </section>
     
-    <section class=" ">
-      <div class="container mb-5">
+    <section class="cart-items">
+      <div class="container mb-5 cart-item">
         <div class="bg-white rounded p-3">
           <div class="row">
             <div class="col-lg-4">
@@ -185,7 +185,7 @@
                 <h4>Plots in Egbada Housing Estate </h4>
                 <hr>
                 <div class="row">
-                  <form class="col-lg-6 border-right">
+                  <form class="col-lg-6 border-lg-right">
                     <legend class=" text-center">Quantity in cart</legend>
                     <div class="form-group row">
                       <span class="col-lg-6">Plotlets</span>
@@ -210,17 +210,101 @@
                       <img src="./assets/imgs/svgs/delete.svg" alt="">
                       <span class="ml-1 text-danger">Remove</span>
                     </div>
+                    <hr class="d-lg-none">
                   </form>
-                  <div class="col-lg-3 border-right">
-                    <p class="h4 text-center">Unit Price</p>
+                  <div class="col-lg-3 border-lg-right">
+                    <p class="h5 text-center">Unit Price</p>
                     <div class=" py-2 text-center font-weight-bold">&#8358;100,000</div>
                     <div class=" py-2 text-center font-weight-bold">&#8358;2,000,000</div>
+                    <hr class="d-lg-none">
+
+                  </div>
+                  <div class="col-lg-3 d-flex flex-column">
+                    <p class="h5 text-center">Total Amount</p>
+                    <div class="text-orange py-2 h5 text-center font-weight-bold mt-5">&#8358;2,100,000</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="container mb-5 cart-item">
+        <div class="bg-white rounded p-3">
+          <div class="row">
+            <div class="col-lg-4">
+              <img src="./assets/imgs/mobile-life.png" class="img-fluid" alt="">
+            </div>
+            <div class="col text-center text-lg-left">
+              <div class="col mx-auto ">
+                <h4>Plots in Egbada Housing Estate </h4>
+                <hr>
+                <div class="row">
+                  <form class="col-lg-6 border-lg-right">
+                    <legend class=" text-center">Quantity in cart</legend>
+                    <div class="form-group row">
+                      <span class="col-lg-6">Plotlets</span>
+                      <div class="col quantity-adjuster">
+                        <img src="./assets/imgs/svgs/plus.svg" alt="" class="add" >
+                        <input type="tel" class="input-counter mx-3" placeholder="5" >
+                        <img src="./assets/imgs/svgs/minus.svg" alt="" class="reduce">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <span class="col-lg-6">Plots</span>
+                      <div class="col quantity-adjuster">
+                        <img src="./assets/imgs/svgs/plus.svg" alt="" class="add">
+                        <input type="tel" class="input-counter mx-3" placeholder="5" >
+                        <img src="./assets/imgs/svgs/minus.svg" alt="" class="reduce">
+                      </div>
+                    </div>
+                    <button class="btn btn-light btn-block mt-4">
+                      <b>Summary</b>: <span>5 Plots, 5 Plotlets</span>
+                    </button>
+                    <div class="d-flex align-items-center my-3">
+                      <img src="./assets/imgs/svgs/delete.svg" alt="">
+                      <span class="ml-1 text-danger">Remove</span>
+                    </div>
+                    <hr class="d-lg-none">
+                  </form>
+                  <div class="col-lg-3 border-lg-right">
+                    <p class="h5 text-center">Unit Price</p>
+                    <div class=" py-2 text-center font-weight-bold">&#8358;100,000</div>
+                    <div class=" py-2 text-center font-weight-bold">&#8358;2,000,000</div>
+                    <hr class="d-lg-none">
+
+                  </div>
+                  <div class="col-lg-3 d-flex flex-column">
+                    <p class="h5 text-center">Total Amount</p>
+                    <div class="text-orange py-2 h5 text-center font-weight-bold mt-5">&#8358;2,100,000</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sum">
+      <div class="container mb-5">
+        <div class="row ">
+          <span class="ml-auto col-auto h4">Total:</span>
+          <span class="col-auto h4 text-orange ">&#8358;4,200,000</span>
+        </div>
+        
+      </div>
+    </section>
+    <section class="call-to-action pb-5">
+      <div class="container mb-5">
+        <div class="row bg-white py-3 justify-content-end">
+          <div class="col-lg-3">
+            <button class="rounded-0 btn btn-block py-2 trans-permanent">BUY MORE</button>
+          </div>
+          <div class="col-lg-3">
+            <button class="rounded-0 btn btn-block py-2 btn-orange out-box">PROCEED TO CHECKOUT</button>
+          </div>
+        </div>
+        
       </div>
     </section>
   </main>

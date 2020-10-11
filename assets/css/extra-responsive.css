@@ -470,6 +470,15 @@ img:not([alt]) {
 .plain-activity-box {
 	box-shadow: 0px 1px 1px 0px #6C7D88;
 }
+
+@media (min-width: 992px) {
+	.border-lg-right {
+		border-right:1px solid #dee2e6!important
+	}
+	.border-lg-left {
+		border-left:1px solid #dee2e6!important
+	}
+}
 @media (min-width: 1400px) {
   .navbar-expand-xl-md {
     -webkit-box-orient: horizontal;
