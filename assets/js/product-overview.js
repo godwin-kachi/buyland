@@ -1,9 +1,22 @@
 /// <reference path="../typings/tsd.d.ts" />
+
 jQuery(function( $ ) {
-    $('input.input-counter').click(function () {
-      alert('a')
+  function increaseQuantity(max=null) {
+    $('.quantity-adjuster .add').click(function () {
+      let input = $(this).siblings('input')[0]
+      if (input.value !== 0 && !max) return input.value++;
+      if (input.value < max) return input.value++
     })
-      dropToggler();
-      autoFixInAltProps();
-  })
+  }
+  function decreaseQuantity() {
+    $('.quantity-adjuster .reduce').click(function () {
+      let input = $(this).siblings('input')[0]
+      if (input.value > 0) return input.value--;
+    })
+  }
+  increaseQuantity(5);
+  decreaseQuantity();
+  
+
+})
   
