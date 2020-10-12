@@ -20,6 +20,9 @@
 .space {
 	height: 180px;
 }
+.space-register {
+	height: 140px;
+}
 .font-new {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	text-align: left;
@@ -43,6 +46,9 @@
 
 .nudge {
 	height: 100px;
+}
+.nudge-100 {
+	height: 50px;
 }
 
 /* ======= Default styles  ======= */
