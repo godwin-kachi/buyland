@@ -14,5 +14,7 @@ ASH SHADE: E0E0E0<br>
 GRREN BUTTON: #27AE60<br>
 RED SHADE: #EB5757<br>
 <br><br>
-Contributors should create branches for their contributions to prevent conflicts, my branch will be called kachi-frontend
+Contributors should create branches for their contributions to prevent conflicts, my branch will be called kachi-frontend<br>
+
+My task uses font-awesome styling, but to reduce the size of the repo I am not pushing it to gh.
 
