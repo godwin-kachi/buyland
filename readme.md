@@ -1,4 +1,10 @@
 Project Title: Buyland
 Team: NexGen Technologies
-Contributors: Chidiebere, Onyekachi, Johnpaul, Innocent, Eva
+
+Frontend Tasks:
+Build the login page: Godwin
+
+Color codes for the project:
+Background gradient:
+
 

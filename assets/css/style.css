@@ -16,6 +16,34 @@
 /* ======= Google Fonts  ======= */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900|Raleway:300,400,700,900');
 
+/* custom styles created for the login page */
+.space {
+	height: 180px;
+}
+.font-new {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-align: left;
+}
+.forgot {
+	float: right;
+}
+
+.btn-buyland {
+	color: #ffffff !important;
+	font-weight: bolder !important;
+	text-transform: uppercase;
+	background-color:  #f2994a !important;
+}
+.btn-buyland-register {
+	color: #000000 !important;
+	font-weight: bolder !important;
+	text-transform: uppercase;
+	background-color: #00dac8 !important;
+}
+
+.nudge {
+	height: 100px;
+}
 
 /* ======= Default styles  ======= */
 * {
