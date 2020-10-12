@@ -4,7 +4,8 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,visualstudiocode,node
 
 # custom files
-/buy_land_designs
+buy_land_designs/
+vendor/
 
 
 ### Node ###
