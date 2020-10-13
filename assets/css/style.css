@@ -18,7 +18,7 @@
 
 /* custom styles created for the login page */
 .space {
-	height: 180px;
+	height: 50px;
 }
 .space-register {
 	height: 140px;
@@ -394,6 +394,11 @@ section#landing-top .img-div img  {
 body#landing .text-div .title *  {
 	font-size:2.5rem;font-weight:300;line-height:1.2;
 }
+@media screen and (max-width: 468px) {
+	.space-on-mobile {
+		height: 300px !important;
+	}
+}
 @media screen and (min-width:576px) {
 	body#landing .text-div .title *  {
 		font-size:3.5rem;
@@ -401,6 +406,9 @@ body#landing .text-div .title *  {
 	body#landing .text-div .title p  {
 		text-shadow: 1px 1px 4px #333;
 	}
+	/* .space-on-mobile {
+		height: 410px !important;
+	} */
 	
 }
 @media screen and (min-width:768px) {
@@ -464,6 +472,7 @@ body#error-404-page h2{
 	body#error-404-page h2{
 		margin-top: -100px;
 	}
+	
 }
 
 /*============================================= Market PAGE =================================================== */

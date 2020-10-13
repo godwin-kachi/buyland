@@ -17,4 +17,3 @@ RED SHADE: #EB5757<br>
 Contributors should create branches for their contributions to prevent conflicts, my branch will be called kachi-frontend<br>
 
 My task uses font-awesome styling, but to reduce the size of the repo I am not pushing it to gh.
-
